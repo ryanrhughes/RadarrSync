@@ -79,7 +79,7 @@ for movie in radarrMovies.json():
                         'monitored': movie['monitored'],
                         'images': images,
                         'profileId': movie['profileId'],
-                        'minimumAvailability': 'released'
+                        'minimumAvailability': movie['minimumAvailability']
                         }
 
             r = session.post('{0}/api/movie?apikey={1}'.format(radarr4k_url, radarr4k_key), data=json.dumps(payload))
