@@ -27,3 +27,4 @@ You need to pass in the following environment variables:
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always  
 ## Notes
  * Ensure that the root path is the same on both servers. ie /movie
+ 
