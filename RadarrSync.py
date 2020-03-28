@@ -67,6 +67,7 @@ for movie in radarrMovies.json():
             for image in images:
                 image['url'] = '{0}{1}'.format(radarr_url, image['url'])
                 logging.debug(image['url'])
+            movie['path'] = movie['path'].replace("/1080p/", "/4K/")
             logging.debug('tmdbId: {0}'.format(movie['tmdbId']))
             logging.debug('path: {0}'.format(movie['path']))
             logging.debug('monitored: {0}'.format(movie['monitored']))
